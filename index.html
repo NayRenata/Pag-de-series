@@ -1,70 +1,160 @@
 <!DOCTYPE html>
 
-    <html lang="br-pt">
+<html lang="br-pt">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Perfil Nayara R.</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <title>Perfil Nayara R.</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- CSS only navbar-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
 
 
-    <body>
-        <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
+<body>
+    <!--navbar- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <figure>
-            <center><img src="Foto Nay.jpeg" alt="Foto de Perfil" align="middle" width="300" height="300">
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active"
+                    style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4">First Slide</h3>
+                        <p class="lead">This is a description for the first slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4">Second Slide</h3>
+                        <p class="lead">This is a description for the second slide.</p>
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item"
+                    style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="display-4">Third Slide</h3>
+                        <p class="lead">This is a description for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="font-weight-light">Half Page Image Slider</h1>
+            <p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The
+                images in this snippet are from <a href="https://unsplash.com">Unsplash</a>!</p>
+        </div>
+    </section>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <figure>
+        <center><img src="Foto Nay.jpeg" alt="Foto de Perfil" align="middle" width="300" height="300">
             <figcaption><b>Contato:</b><br>nayara_renata11@hotmail.com<br>(11)98321-0101</figcaption>
-            </center>
-        </figure>
+        </center>
+    </figure>
 
-        <h4>Eu não sou uma pessoa de desistir à primeira tentativa, pois acredito<br> que as maiores conquistas estão
-            guardadas para quem tem foco em seus objetivos.</h3>
+    <h4>Eu não sou uma pessoa de desistir à primeira tentativa, pois acredito<br> que as maiores conquistas estão
+        guardadas para quem tem foco em seus objetivos.</h3>
 
         <h2>Sobre mim:</h2>
 
-            <p>
-                Meu nome é Nayara Renata, uma paulistana de 26 anos. Nascida e criada em São Paulo, na busca de seus
-                objetivos; se encontrando em um mundo totalmente divergente do qual ela esperava se encontrar, mas muito
-                feliz com suas vitórias e na busca de entender os seus erros para assim melhorar a cada dia. Sou uma
-                ex-estudante da área de saúde que começou se apaixonar pela área de desenvolvimento web e hoje em dia está
-                descobrindo um mundo totalmente diferente do seu habitual.
-            <p>
-                Comecei a estudar programação por conta própria e desde então descobri que a área da tecnologia não é um
-                monstro como eu imaginava. Por conta disso, percebi a necessidade de um auxilio mais de perto, então
-                procurei um curso no qual eu acredito que vai me ajudar na conquista de um bom emprego.
-                Assim eu entrei para Arbyte no ano de 2020, na turma 2 no qual em pouco tempo percebi rapidamente a minha
-                evolução na área de <b>Desenvolvimento Front-End mobile. </b>
-            </p>
+        <p>
+            Meu nome é Nayara Renata, uma paulistana de 26 anos. Nascida e criada em São Paulo, na busca de seus
+            objetivos; se encontrando em um mundo totalmente divergente do qual ela esperava se encontrar, mas muito
+            feliz com suas vitórias e na busca de entender os seus erros para assim melhorar a cada dia. Sou uma
+            ex-estudante da área de saúde que começou se apaixonar pela área de desenvolvimento web e hoje em dia está
+            descobrindo um mundo totalmente diferente do seu habitual.
+        <p>
+            Comecei a estudar programação por conta própria e desde então descobri que a área da tecnologia não é um
+            monstro como eu imaginava. Por conta disso, percebi a necessidade de um auxilio mais de perto, então
+            procurei um curso no qual eu acredito que vai me ajudar na conquista de um bom emprego.
+            Assim eu entrei para Arbyte no ano de 2020, na turma 2 no qual em pouco tempo percebi rapidamente a minha
+            evolução na área de <b>Desenvolvimento Front-End mobile. </b>
+        </p>
 
-            <center>
-                <a href="https://www.facebook.com/nayararenata.costa" target="_black"><img src="face.jpg" width="70"
-                        height="70"></a>
+        <center>
+            <a href="https://www.facebook.com/nayararenata.costa" target="_black"><img src="face.jpg" width="70"
+                    height="70"></a>
 
-                <a href="https://www.instagram.com/nay_re/?hl=pt-br" target="_black"><img src="instagram3.jpg" width="70"
-                        height="70"></a>
+            <a href="https://www.instagram.com/nay_re/?hl=pt-br" target="_black"><img src="instagram3.jpg" width="70"
+                    height="70"></a>
 
-                <a href="https://www.linkedin.com/in/nayara-renata-costa-882949125/" target="_black"><img src="linkedin.jpg"
-                        width="70" height="70"></a>
-            </center>
+            <a href="https://www.linkedin.com/in/nayara-renata-costa-882949125/" target="_black"><img src="linkedin.jpg"
+                    width="70" height="70"></a>
+        </center>
 
-            <p></p>
-            <p></p>
+        <p></p>
+        <p></p>
 
-            <center><audio controls autoplay>
-                    <source src="Ecstasy  If.mp3" type="audio/mpeg"></audio>             
-            </center>
-            <p></p>
-            
-            <div class="footer">
-                <p>Arbyte 2020</p>
-            </div>
+        <center><audio controls autoplay>
+                <source src="Ecstasy  If.mp3" type="audio/mpeg"></audio>
+        </center>
+        <p></p>
 
-    </body>
+        <div class="footer">
+            <p>Arbyte 2020</p>
+        </div>
 
-    </html>
+</body>
+
+</html>
