@@ -11,44 +11,45 @@
 /* final navbar */
 
 img{  
+  width: 80%;
+  height: 50%;
   margin-bottom: 20px;
-  border-radius: 900px;
-  border: thick solid rgb(99, 90, 90);
-  padding: 0px; 
+  border-radius: 20px;
+  border: #212529;
+  page-break-inside: auto;
+  
 }
 
-figure{ 
- float: right;
- width:75% ;
- padding: 7em; 
-}
-
-figcaption{
-  float: right;
-  width:84% ;
-  padding: ; 
-  font-size: x-large;   
-}
-
-.containe{width: 10%;
-  height: 3px;
+.container{
+  width: none;
+  height: none;
   position: relative;
-  background: #ccc  }
+  background: none;  
+}
 
   /* footer */
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(46, 45, 45);
-    color: white;
-    text-align: center;
-    padding: 0;
+
+  html,
+  body {
+    height: 1000%;
   }
+  
+  #page-content {
+    flex: 1 0 auto;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+  }
+  
+ 
+  
+  
+
 
   .h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 900px;
   }
